@@ -22,7 +22,7 @@
     <span class="hljs-string">'Authorization'</span>: <span class="hljs-string">'Bearer TOKEN_STRING_HERE'</span>
   },
   <span class="hljs-attribute">body</span>: JSON.stringify({ <span class="hljs-comment">/* whatever things you need to send to the API */</span> })
-})
+})      
 </code></pre>
 <p>It is <strong>crucial</strong> that the value for <code>Authorization</code> is a string starting with <code>Bearer</code>, followed by a space, and finished with the <code>token</code> you receive either by registering or logging in. Deviating from this format will cause the API to not recognize the token, and will result in an error.</p>
 <p>If the token is malformed, missing, or has been revoked, you will get a response specific to that.</p>
